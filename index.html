@@ -10,102 +10,186 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <link rel="stylesheet" href="./styles/index.css">
+  <link rel="stylesheet" href="./styles/mobile.css">
 
 </head>
 <body>
-
+  <!-- header section -->
   <!-- nav section -->
-  <div class="navbar flex_container justifier_navbar" style="align-items: center;">
+  <div class="navbar flex_container justifier_navbar navbar_mobile" >
     
     <div class="logo_wrapper">bidhya</div>
 
-    <div class="flex_container" style="gap: 20px;">
+    <div class="flex_container navbar_mobile ">
+
       <div class="nav_item"><a href="">Home</a> </div>
-      <div class="nav_item"><a href="">Skills</a></div>
-      <div class="nav_item"><a href="">Contact</a></div>
+      <div class="nav_item"><a href="#what_i_do">Services</a></div>
+      <div class="nav_item"><a href="#contact_id">Contact</a></div>
     </div>
 
  </div> 
     
-
+ <!-- welcome section -->
  <!--two side flex section for introduction and image  -->
- <div style="background: #e7e7e7; padding-top: 40px;">
- <div class="flex_container"
-  style=
-   "justify-content: space-between; 
-   align-items: center;
-   max-width: 800px;
-   margin: auto;" 
-    >
+ <div class="welcome_section" >
+ <div class="flex_container welcome">
 
+  <!-- left section -->
    <div>
-     <b style="font-weight: bold; color: #636363;">Hello, I am</b>  
-     <div style="font-weight: bold; font-size: 40px; color: var(--primary-color);"  >Bidhya Khadka</div>
+     <b class="greeting">Hello, I am</b>  
+     <div class="name"   >Bidhya Khadka</div>
 
-     <div class="intro_text" style="font-size: 14px; line-height: 20px; color: #434343;">
-       <br>
+     <div class="intro_text">
        My name is Bidhya Khadka. I am a student of BCA. I am a front-end developer & i'm very passionate about my work.
-       <br><br>
-        If you want me to build a website, please contact me and we will get in touch soon.
-        <br><br>
+       
+      If you want me to build a website, please contact me and we will get in touch soon.
+       
+        <div>
+         <a href="#contact_id"><button class="primary_button">Contact me</button></a>
+        </div>
+        
+      </div>
+    </div>
+        
+<!-- right section -->
+    <div>
+      <div class="profile_image">
+      <div class="online"></div>
+ 
+      </div>
+    </div>
+       
 
-       <div>
-         <button class="primary_button">Contact me</button>
-       </div>
-       <br>
 
-     </div>
-   </div>
 
+  </div>
+  </div>
    
 
-   <div>
-     <div class="profile_image"></div>
-   </div>
 
- </div>
- </div>
 
  <!-- divider like horizontal line creation -->
  <div class="divider"></div>
 
- <!-- what i do section? -->
- <div style="max-width: 900px; margin: auto; text-align: center; padding: 20px;">
-  <div style="font-size: 25px; font-weight: bold;">What I do!</div>
+ <!-- what i do section starts? -->
+ <div id="what_i_do" class="what_i_do_container">
 
-    <div class="flex_container" style=" justify-content: space-around;">
+  <div class="what_i_do_text">What I do!</div>
 
-      <div class="rounded_card" style="width: 30%;">
-          <i class="fa-solid fa-compass-drafting" style="font-size: 30px; color: var(--primary-color); margin: 10px 0;" ></i>
+    <div class="flex_container" >
+
+      <div class="rounded_card" >
+          <i class="fa-solid fa-compass-drafting" ></i>
           <br />
-          <div style="font-size: 20px; font-weight: bold;">Web Development</div>
-          <div style="font-size: 14px;line-height: 20px;">I can develop responsive websites and delivery you at the quickest time. Trust me on that one!</div>
+          <div class="card-title">Web Development</div>
+          <div class="card-desc" >I can develop responsive websites and delivery you at the quickest time. Trust me on that one!</div>
       </div>
 
 
-      <div class="rounded_card" style="width: 30%">
-        <i class="fa-solid fa-mobile" style="font-size: 30px; color: var(--primary-color); margin: 10px 0;"></i>
+      <div class="rounded_card" >
+        <i class="fa-solid fa-mobile" ></i>
           
           <br />
-          <div style="font-size: 20px; font-weight: bold;">App Development</div>
-          <div style="font-size: 14px;line-height: 20px;">I develop scalable apps in flutter. I've good experience in UI/Ux too. You can trust me on that too.</div>
-      </div>
-
-      <div class="rounded_card"  style="width: 30%">
-          
-          <i class="fa-solid fa-swatchbook" style="font-size: 30px; color: var(--primary-color); margin: 10px 0;"></i>
-          <br />
-          <div style="font-size: 20px; font-weight: bold;">Web Development</div>
-          <div style="font-size: 14px;line-height: 20px;">I can build eye-catching UI/UX like never before. I can make it as awesome as it can be .</div>
+          <div class="card-title" >UI/UX</div>
+          <div class="card-desc">I can build eye-catching UI/UX.</div>
       </div>
 
     </div>
   
-  
-  
-  
-  
   </div>
+  <!-- what i do section end? -->
+  
+  <!-- divider section -->
+   <div class="divider"></div>
+  
+  
+   <!-- call me section start -->
+   <div class="primary_banner">
+   
+     <div class="title">Have any Projects in Mind ?</div>
+     <a href="tel:9863438655">
+   
+       <button class="btn primary_button ">Call me</button>
+     </a>
+       
+   </div>
+   <!-- call me section end -->
+   
+   <!-- contact me starts -->
+   <div class="contact_container" id="contact_id">
+     <div class="flex_container" >
+
+       <div class="image_class">
+
+         <div class="contact_image"></div>
+
+        <a href="https://www.linkedin.com/in/bidhya-khadka-9a9658268/" target="_blank" title="Linkedln Link">
+          <div class="account"><i class="fa-brands fa-linkedin"></i></div>
+        </a>
+
+        <a href="https://github.com/Bidhya-khadka" target="_blank" title="Github Link"><div class="account"><i class="fa-brands fa-square-github"></i></div></a>
+
+        <a href="mailto:kdkbidhya248@gmail.com"target="_blank" title="Gmail Link"><div class="account"><i class="fa-solid fa-envelope"></i></div></a>
+
+        <a href="tel:9863438655" target="_blank" title="Dial"><div class="mobile_no"><i class="fa-solid fa-phone-volume"></i></div></a>
+
+        
+
+          
+       </div>
+   
+       <div class="contact_section">
+         
+         <div class=" cn_title">Contact Me</div>
+         <!-- form starts -->
+         <form action="./index.html" method="get">
+   
+           <div class="label_input">
+           <label for="fullName">Full Name</label>
+           <input type="text" name="name" id="fullName" placeholder="Enter your fullname" required pattern="[A-Z][a-z]{1,40}">
+           </div>
+   
+           <div class="label_input">
+             <label for="email">Email</label>
+             <input type="email" name="email" id="email" placeholder="abc@gmail.com" required>
+           </div>
+   
+           <div class="label_input">
+             <label for="phone">Phone</label>
+             <input type="text" name="phone" id="phone" pattern="[0-9]{10}" required>
+           </div>
+   
+           <div class="label_textarea">
+             <textarea name="decs" id="description" cols="30" rows="4" required >Comment...</textarea>
+           </div>
+   
+           <div class="submit">
+             <button>Submit</button>
+           </div>
+   
+           
+         </form>
+         <!-- form ends -->
+   
+       </div>
+     </div>
+   
+   </div>
+   <!-- contact me end -->
+   
+   <!-- footer starts -->
+   <div class="footer">
+     <p>Gagalphedi, Kathmandu</p>
+   bidhyakhadka.com.np &copy; 2023, All rights reserved
+   </div>
+   <!-- footer ends -->
+
+  
+
+
+
+
+
  
  
 
